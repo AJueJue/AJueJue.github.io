@@ -14,7 +14,7 @@
 <meta property="og:description" content="力扣第189题思路代码双指针123456789101112131415161718192021222324252627282930class Solution &amp;#123;public:    void rotate(vector&lt;int&gt;&amp; nums, int k) &amp;#123;        int n&#x3D;nums.size()-1;        int l&#x3D;0,r&#x3D;n;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-30T05:05:50.000Z">
-<meta property="article:modified_time" content="2023-01-30T05:45:45.043Z">
+<meta property="article:modified_time" content="2023-01-30T07:29:19.108Z">
 <meta property="article:author" content="AJie">
 <meta property="article:tag" content="欢迎阅读阿杰的文章">
 <meta name="twitter:card" content="summary">
@@ -102,7 +102,7 @@
 <p>所以得到公式</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">k=k%(n+1);//n+1为数组长度</span><br></pre></td></tr></table></figure>
 
-<h4 id="之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了"><a href="#之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了" class="headerlink" title="之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了"></a>之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了</h4><h5 id="时间复杂度-1-5n-其中-n-为数组的长度"><a href="#时间复杂度-1-5n-其中-n-为数组的长度" class="headerlink" title="时间复杂度(1.5n)  其中 n 为数组的长度"></a>时间复杂度(1.5n)  其中 <em>n</em> 为数组的长度</h5><h5 id="空间复杂度-1-仅用题目本身数组即可"><a href="#空间复杂度-1-仅用题目本身数组即可" class="headerlink" title="空间复杂度(1)  仅用题目本身数组即可"></a>空间复杂度(1)  仅用题目本身数组即可</h5>
+<h4 id="之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了"><a href="#之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了" class="headerlink" title="之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了"></a>之后就是双指针将整个数组翻转再以k为分界各翻转一次就达成目标了</h4><h5 id="时间复杂度O-2n-其中-n-为数组的长度-一共会翻转两次数组所以时间复杂度为2n"><a href="#时间复杂度O-2n-其中-n-为数组的长度-一共会翻转两次数组所以时间复杂度为2n" class="headerlink" title="时间复杂度O(2n)  其中 n 为数组的长度 一共会翻转两次数组所以时间复杂度为2n"></a>时间复杂度O(2n)  其中 <em>n</em> 为数组的长度 一共会翻转两次数组所以时间复杂度为2n</h5><h5 id="空间复杂度O-1-仅用题目本身数组即可"><a href="#空间复杂度O-1-仅用题目本身数组即可" class="headerlink" title="空间复杂度O(1)  仅用题目本身数组即可"></a>空间复杂度O(1)  仅用题目本身数组即可</h5>
       
     </div>
     <footer class="article-footer">
