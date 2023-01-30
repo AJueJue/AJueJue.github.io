@@ -6,17 +6,17 @@
   
   <title>leetcode189 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="力扣第189题思路代码双指针123456789101112131415161718192021222324252627282930class Solution &amp;#123;public:    void rotate(vector&lt;int&gt;&amp; nums, int k) &amp;#123;        int n&#x3D;nums.size()-1;        int l&#x3D;0,r&#x3D;n;">
+  <meta name="description" content="欢迎阅读阿杰的文章 力扣第189题思路代码双指针123456789101112131415161718192021222324252627282930class Solution &amp;#123;public:    void rotate(vector&lt;int&gt;&amp; nums, int k) &amp;#123;        int n&#x3D;nums.size()-1;        int">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode189">
 <meta property="og:url" content="http://example.com/2023/01/30/leetcode189/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="力扣第189题思路代码双指针123456789101112131415161718192021222324252627282930class Solution &amp;#123;public:    void rotate(vector&lt;int&gt;&amp; nums, int k) &amp;#123;        int n&#x3D;nums.size()-1;        int l&#x3D;0,r&#x3D;n;">
+<meta property="og:description" content="欢迎阅读阿杰的文章 力扣第189题思路代码双指针123456789101112131415161718192021222324252627282930class Solution &amp;#123;public:    void rotate(vector&lt;int&gt;&amp; nums, int k) &amp;#123;        int n&#x3D;nums.size()-1;        int">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-30T05:05:50.000Z">
-<meta property="article:modified_time" content="2023-01-30T07:29:19.108Z">
+<meta property="article:modified_time" content="2023-01-30T07:42:02.442Z">
 <meta property="article:author" content="AJie">
-<meta property="article:tag" content="欢迎阅读阿杰的文章">
+<meta property="article:tag" content="leetcode">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -96,7 +96,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="力扣第189题思路"><a href="#力扣第189题思路" class="headerlink" title="力扣第189题思路"></a>力扣第189题思路</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h4 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n=nums.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">        <span class="type">int</span> l=<span class="number">0</span>,r=n;</span><br><span class="line">        k=k%(n+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">        l=k;r=n;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">        l=<span class="number">0</span>;</span><br><span class="line">        r=k<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <p>欢迎阅读阿杰的文章</p>
+<h1 id="力扣第189题思路"><a href="#力扣第189题思路" class="headerlink" title="力扣第189题思路"></a>力扣第189题思路</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h4 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n=nums.<span class="built_in">size</span>()<span class="number">-1</span>;</span><br><span class="line">        <span class="type">int</span> l=<span class="number">0</span>,r=n;</span><br><span class="line">        k=k%(n+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">        l=k;r=n;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">        l=<span class="number">0</span>;</span><br><span class="line">        r=k<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="type">int</span> tem=nums[l];</span><br><span class="line">            nums[l]=nums[r];</span><br><span class="line">            nums[r]=tem;</span><br><span class="line">            l++;r--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h4 id="从头来看"><a href="#从头来看" class="headerlink" title="从头来看"></a>从头来看</h4><p>假设一个数组 str[n],那么该数组向右移动n格后数组不变</p>
 <p>所以得到公式</p>
@@ -110,22 +111,12 @@
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AC%A2%E8%BF%8E%E9%98%85%E8%AF%BB%E9%98%BF%E6%9D%B0%E7%9A%84%E6%96%87%E7%AB%A0/" rel="tag">欢迎阅读阿杰的文章</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li></ul>
 
     </footer>
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2023/01/14/test/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">test</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -141,7 +132,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AC%A2%E8%BF%8E%E9%98%85%E8%AF%BB%E9%98%BF%E6%9D%B0%E7%9A%84%E6%96%87%E7%AB%A0/" rel="tag">欢迎阅读阿杰的文章</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li></ul>
     </div>
   </div>
 
@@ -151,7 +142,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E6%AC%A2%E8%BF%8E%E9%98%85%E8%AF%BB%E9%98%BF%E6%9D%B0%E7%9A%84%E6%96%87%E7%AB%A0/" style="font-size: 10px;">欢迎阅读阿杰的文章</a>
+      <a href="/tags/leetcode/" style="font-size: 10px;">leetcode</a>
     </div>
   </div>
 
@@ -174,10 +165,6 @@
         
           <li>
             <a href="/2023/01/30/leetcode189/">leetcode189</a>
-          </li>
-        
-          <li>
-            <a href="/2023/01/14/test/">test</a>
           </li>
         
       </ul>
