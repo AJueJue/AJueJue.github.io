@@ -99,7 +99,46 @@
 <p>例如	</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">string a=&#123;&quot;abcde&quot;&#125;; </span><br><span class="line"></span><br><span class="line">//string为字符串</span><br><span class="line"></span><br><span class="line">unorder_map&lt;char,int&gt; hash;</span><br><span class="line"></span><br><span class="line">for(int i=0;i&lt;a.size();i++)&#123;</span><br><span class="line">	++hash[a[i]];</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86135\AppData\Roaming\Typora\typora-user-images\image-20230202230455013.png" alt="image-20230202230455013"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>名称</th>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>▶</td>
+<td>[97 ‘a’]</td>
+<td>(97 ‘a’, 1)</td>
+<td>std::pair&lt;char const ,int&gt;</td>
+</tr>
+<tr>
+<td>▶</td>
+<td>[98 ‘b’]</td>
+<td>(98 ‘b’, 1)</td>
+<td>std::pair&lt;char const ,int&gt;</td>
+</tr>
+<tr>
+<td>▶</td>
+<td>[99 ‘c’]</td>
+<td>(99 ‘c’, 1)</td>
+<td>std::pair&lt;char const ,int&gt;</td>
+</tr>
+<tr>
+<td>▶</td>
+<td>[100 ‘d’]</td>
+<td>(100 ‘d’, 1)</td>
+<td>std::pair&lt;char const ,int&gt;</td>
+</tr>
+<tr>
+<td>▶</td>
+<td>[101 ‘e’]</td>
+<td>(101 ‘e’, 1)</td>
+<td>std::pair&lt;char const ,int&gt;</td>
+</tr>
+</tbody></table>
 <p>hash可表示为{	1	,	1	,	1	,	1	,	1	}</p>
 <p>​						 	 ‘a’		 ‘b’	  ‘c’		‘d’		‘e’</p>
 <p>即hash[‘a’]&#x3D;1…..以此类推</p>
