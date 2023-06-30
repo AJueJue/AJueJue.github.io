@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jun 2023 23:45:27 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fblog</title>
+      <link>/post/fblog/</link>
+      <pubDate>Fri, 30 Jun 2023 23:45:27 +0800</pubDate>
+      
+      <guid>/post/fblog/</guid>
+      <description>搭建博客遇到的问题
+输入hugo server时显示
+WARN found no layout file for &amp;ldquo;html&amp;rdquo; for kind &amp;ldquo;home&amp;rdquo;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination. WARN found no layout file for &amp;ldquo;html&amp;rdquo; for kind &amp;ldquo;taxonomy&amp;rdquo;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+解决方法：将主题的配置文件复制到主目录下，完成初始化
+输入git push -u origin master显示
+fatal: &amp;lsquo;AJueJue.github.io&amp;rsquo; does not appear to be a git repository fatal: Could not read from remote repository.</description>
+    </item>
+    
+  </channel>
+</rss>
